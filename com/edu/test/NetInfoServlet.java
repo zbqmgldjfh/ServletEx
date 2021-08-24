@@ -8,7 +8,7 @@ import javax.servlet.http.*;
 @WebServlet("/netInfo")
 public class NetInfoServlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		res.setContentType("test/html;charset=EUC-KR");
+		res.setContentType("text/html;charset=EUC-KR");
 		PrintWriter out = res.getWriter();
 		out.print("<html>");
 		out.print("<head><title>Request 정보 출력 Servlet</title></head>");
