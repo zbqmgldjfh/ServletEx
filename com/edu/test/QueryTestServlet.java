@@ -16,8 +16,9 @@ public class QueryTestServlet extends HttpServlet {
 		resp.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = resp.getWriter();
 		out.print("<html>");
+		out.print("<head><title>Query ¹®ÀÚ¿­ Å×½ºÆ®</title></head>");
 		out.print("<body>");
-		out.print("<h1>GET ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½</h1>");
+		out.print("<h1>GET ¹æ½ÄÀ¸·Î ¿ëÃ»µÇ¾ú½À´Ï´Ù</h1>");
 		
 		String id = req.getParameter("id");
 		String password = req.getParameter("pwd");
@@ -28,17 +29,17 @@ public class QueryTestServlet extends HttpServlet {
 		String intro = req.getParameter("introduction");
 		
 		out.print("ID : " + id + "<br/>");
-		out.print("ï¿½ï¿½Ð¹ï¿½È£ : " + password + "<br/>");
-		out.print("ï¿½Ì¸ï¿½ : " + name + "<br/>");
-		out.print("ï¿½ï¿½ï¿½ : ");
+		out.print("ºñ¹Ð¹øÈ£ : " + password + "<br/>");
+		out.print("ÀÌ¸§ : " + name + "<br/>");
+		out.print("Ãë¹Ì : ");
 		for(int i = 0; i < hobbies.length; i++) {
 			out.print(hobbies[i] + " ");
 		}
 		out.print("<br/>");
-		out.print("ï¿½ï¿½ï¿½ï¿½ : " + gender + "<br/>");
-		out.print("ï¿½ï¿½ï¿½ï¿½ : " + religion + "<br/>");
-		out.print("ï¿½Ò°ï¿½ : " + intro + "<br/>");
-		out.print("ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ : " + req.getQueryString());
+		out.print("¼ºº° : " + gender + "<br/>");
+		out.print("Á¾±³ : " + religion + "<br/>");
+		out.print("¼Ò°³ : " + intro + "<br/>");
+		out.print("ÀüÃ¼ ÁúÀÇ ¹®ÀÚ¿­ : " + req.getQueryString());
 		
 		out.print("</body></html>");
 		out.close();
@@ -49,9 +50,9 @@ public class QueryTestServlet extends HttpServlet {
 		resp.setContentType("text/html;charset=UTF-8");
 		PrintWriter out = resp.getWriter();
 		out.print("<html>");
-		out.print("<head><title>Query ï¿½ï¿½ï¿½Ú¿ï¿½ ï¿½×½ï¿½Æ®</title></head>");
+		out.print("<head><title>Query ¹®ÀÚ¿­ Å×½ºÆ®</title></head>");
 		out.print("<body>");
-		out.print("<h1>POST ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ã»ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½Ï´ï¿½</h1>");
+		out.print("<h1>POST ¹æ½ÄÀ¸·Î ¿äÃ»µÇ¾ú½À´Ï´Ù</h1>");
 		
 		String id = req.getParameter("id");
 		String password = req.getParameter("pwd");
@@ -62,16 +63,16 @@ public class QueryTestServlet extends HttpServlet {
 		String intro = req.getParameter("introduction");
 		
 		out.print("ID : " + id + "<br/>");
-		out.print("ï¿½ï¿½Ð¹ï¿½È£ : " + password + "<br/>");
-		out.print("ï¿½Ì¸ï¿½ : " + name + "<br/>");
-		out.print("ï¿½ï¿½ï¿½ : ");
+		out.print("ºñ¹Ð¹øÈ£ : " + password + "<br/>");
+		out.print("ÀÌ¸§ : " + name + "<br/>");
+		out.print("Ãë¹Ì : ");
 		for(int i = 0; i < hobbies.length; i++) {
 			out.print(hobbies[i] + " ");
 		}
 		out.print("<br/>");
-		out.print("ï¿½ï¿½ï¿½ï¿½ : " + gender + "<br/>");
-		out.print("ï¿½ï¿½ï¿½ï¿½ : " + religion + "<br/>");
-		out.print("ï¿½Ò°ï¿½ : " + intro + "<br/>");
+		out.print("¼ºº° : " + gender + "<br/>");
+		out.print("Á¾±³ : " + religion + "<br/>");
+		out.print("¼Ò°³ : " + intro + "<br/>");
 		
 		out.print("</body></html>");
 		out.close();
