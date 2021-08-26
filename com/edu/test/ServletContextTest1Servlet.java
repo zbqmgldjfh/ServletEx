@@ -12,8 +12,10 @@ public class ServletContextTest1Servlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/html;cahrset=UTF-8");
 		PrintWriter out = resp.getWriter();
+		
 		ServletContext sc = this.getServletContext();
-		out.print("Context : " + sc);
+		String location = sc.getInitParameter("contextConfig");
+		out.print("location : " + location);
 		out.close();
 	}
 }
