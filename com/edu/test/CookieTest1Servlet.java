@@ -13,12 +13,12 @@ public class CookieTest1Servlet extends HttpServlet {
 		PrintWriter out = resp.getWriter();
 		
 		Cookie c1 = new Cookie("id", "guest");
-		c1.setPath("/context3");
+		c1.setPath("/");
 		resp.addCookie(c1);
 		
 		Cookie c2 = new Cookie("code", "0001");
 		c2.setMaxAge(60 * 60 * 3);
-		c2.setPath("/context3");
+		c2.setPath("/");
 		resp.addCookie(c2);
 		
 		Cookie c3 = new Cookie("subject", "java");
